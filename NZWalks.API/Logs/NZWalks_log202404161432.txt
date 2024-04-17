@@ -1,0 +1,38 @@
+2024-04-16 14:32:28.413 +05:30 [INF] User profile is available. Using 'C:\Users\Dinesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-16 14:32:28.747 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-04-16 14:32:28.855 +05:30 [INF] Now listening on: https://localhost:7258
+2024-04-16 14:32:28.856 +05:30 [INF] Now listening on: http://localhost:5003
+2024-04-16 14:32:28.861 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-16 14:32:28.863 +05:30 [INF] Hosting environment: Development
+2024-04-16 14:32:28.864 +05:30 [INF] Content root path: D:\DAC\Projects\MS.NET\Udemy\Web API\NZWalks\NZWalks\NZWalks.API
+2024-04-16 14:32:30.699 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger - null null
+2024-04-16 14:32:31.039 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger - 301 0 null 352.7422ms
+2024-04-16 14:32:31.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2024-04-16 14:32:31.309 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 262.6356ms
+2024-04-16 14:32:31.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/swagger-ui-standalone-preset.js - null null
+2024-04-16 14:32:31.316 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/swagger-ui.css - null null
+2024-04-16 14:32:31.316 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/swagger-ui-bundle.js - null null
+2024-04-16 14:32:31.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2024-04-16 14:32:31.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-16 14:32:31.400 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 82.805ms
+2024-04-16 14:32:31.430 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-16 14:32:31.433 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-16 14:32:31.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/swagger-ui.css - 200 143943 text/css 149.9787ms
+2024-04-16 14:32:31.554 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-16 14:32:31.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 173.6324ms
+2024-04-16 14:32:31.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 252.912ms
+2024-04-16 14:32:31.572 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 256.4242ms
+2024-04-16 14:32:31.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2024-04-16 14:32:32.125 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 256.0829ms
+2024-04-16 14:32:39.432 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7258/api/Regions - null null
+2024-04-16 14:32:39.827 +05:30 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API)'
+2024-04-16 14:32:39.857 +05:30 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-04-16 14:32:40.295 +05:30 [INF] GetAll IAction Method of Region Controlled was invoked
+2024-04-16 14:32:42.308 +05:30 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-04-16 14:32:42.423 +05:30 [INF] Finished GetAll Region Request with data: [{"Id":"906cb139-415a-4bbb-a174-1a1faf9fb1f6","Code":"NSN","Name":"Nelson","RegionImageUrl":"https://images.pexels.com/photos/13918194/pexels-photo-13918194.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"},{"Id":"f7248fc3-2585-4efb-8d1d-1c555f4087f6","Code":"AKL","Name":"Auckland","RegionImageUrl":"https://images.pexels.com/photos/5169056/pexels-photo-5169056.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"},{"Id":"14ceba71-4b51-4777-9b17-46602cf66153","Code":"BOP","Name":"Bay Of Plenty","RegionImageUrl":null},{"Id":"6884f7d7-ad1f-4101-8df3-7a6fa7387d81","Code":"NTL","Name":"Northland","RegionImageUrl":null},{"Id":"f077a22e-4248-4bf6-b564-c7cf4e250263","Code":"STL","Name":"Southland","RegionImageUrl":null},{"Id":"cfa06ed2-bf65-4b65-93ed-c9d286ddb0de","Code":"WGN","Name":"Wellington","RegionImageUrl":"https://images.pexels.com/photos/4350631/pexels-photo-4350631.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"}]
+2024-04-16 14:32:42.442 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTO.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-16 14:32:42.454 +05:30 [INF] Executed action NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API) in 2591.1157ms
+2024-04-16 14:32:42.456 +05:30 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API)'
+2024-04-16 14:32:42.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7258/api/Regions - 200 null application/json; charset=utf-8 3082.9269ms
